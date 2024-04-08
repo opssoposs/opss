@@ -136,10 +136,27 @@ const keys = {
     },
 
 }
-// player.draw();
-// enemy.draw();
+let timer = 10;
 
-// let lastKey;
+function decreaseTimer(
+    {
+        if (timer > 0)
+        {
+            setTimeout(decreaseTimer, 1000);
+            timer--
+            document.querySelector(#timer).innerHTML = timer;
+
+
+        } {
+            if(player.health === enemy.health)
+            {
+                console.log("무승부");
+            }
+        }
+    }
+)
+
+
 
 function animate() {
     window.requestAnimationFrame(animate);
